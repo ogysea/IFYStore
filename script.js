@@ -48,15 +48,15 @@ const productContainer2 = document.querySelector(".row2");
 
 // Ambil tiga file JSON sekaligus
 Promise.all([
-  fetch('productswomen.json').then(res => {
+  fetch('productsWomen.json').then(res => {
     if (!res.ok) throw new Error("Gagal ambil produk wanita");
     return res.json();
   }),
-  fetch('productsmans.json').then(res => {
+  fetch('productsMans.json').then(res => {
     if (!res.ok) throw new Error("Gagal ambil produk pria");
     return res.json();
   }),
-    fetch('productsunisex.json').then(res => {
+    fetch('productsUnisex.json').then(res => {
     if (!res.ok) throw new Error("Gagal ambil produk pria");
     return res.json();
   })
