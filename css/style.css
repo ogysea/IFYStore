@@ -44,40 +44,6 @@ html, body {
   }
 }
 
-/* ===== RESPONSIVE ABOUT SECTION ===== */
-@media (max-width: 768px) {
-  .about .tentang {
-    display: flex;
-    flex-direction: column;   /* gambar atas - teks bawah */
-    align-items: center;
-    text-align: center;       /* teks ke tengah */
-    gap: 20px;
-  }
-
-  .about-img img {
-    width: 90%;
-    height: auto;
-    border-radius: 12px;
-  }
-
-  .about .content {
-    width: 90%;
-  }
-
-  .about .content h3 {
-    font-size: 20px;          /* kecil agar pas di HP */
-  }
-
-  .about .content p {
-    font-size: 14px;          /* perkecil tulisan */
-    line-height: 1.6;
-  }
-
-  .about h2 {
-    font-size: 26px;          /* judul utama about */
-  }
-}
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
@@ -464,6 +430,41 @@ body {
   font-size: 1.4rem;
   font-weight: 100;
   line-height: 1.6;
+}
+
+/* ===== RESPONSIVE ABOUT SECTION ===== */
+@media (max-width: 768px) {
+  .about .tentang {
+    display: flex;
+    flex-direction: column;   /* gambar atas - teks bawah */
+    align-items: center;
+    text-align: center;       /* teks ke tengah */
+    gap: 20px;
+  }
+
+  .about-img img {
+    width: 90%;
+    height: auto;
+    border-radius: 12px;
+    adding-bottom: 1rem;
+  }
+
+  .about .content {
+    width: 90%;
+  }
+
+  .about .content h3 {
+    font-size: 20px;          /* kecil agar pas di HP */
+  }
+
+  .about .content p {
+    font-size: 14px;          /* perkecil tulisan */
+    line-height: 1.6;
+  }
+
+  .about h2 {
+    font-size: 26px;          /* judul utama about */
+  }
 }
 
 .slide-section h2 {
