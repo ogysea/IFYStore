@@ -798,6 +798,10 @@ body {
     font-size: 0.75rem;
     max-width: 95%;
   }
+  
+  .menu .submenu {
+    min-height: 50vh;
+  }
 
   .row, .row1, .row2 {
     gap: 12px;
