@@ -439,8 +439,11 @@ body {
     padding: 2.5rem 5% 1rem; /* lebih rapat */
   }
   
-  .about .tentang .about-img {
-  max-width: 100%;
+  .about .tentang .about-img,
+  .about .tentang .content {
+    flex: none; /* hilangkan fleksibilitas */
+    width: 100%; /* atau 95% untuk sedikit margin */
+  }
 }
 
   .about .tentang {
@@ -626,28 +629,6 @@ body {
 .floating-wa img:hover {
   width: 35px;
   height: 35px;
-}
-
-/* Media Query Tablet */
-@media (max-width: 768px) {
-  html {
-    .about .row {
-      flex-wrap: wrap;
-    }
-
-    .about .row .about-img img {
-      height: 24rem;
-      object-fit: cover;
-      object-position: center;
-    }
-    .about .row .content {
-      padding: 0;
-    }
-    .about .row .content h3 {
-      margin-top: 1rem;
-      font-size: 1.6rem;
-    }
-  }
 }
 
 /* Menu */
