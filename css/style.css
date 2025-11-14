@@ -787,7 +787,7 @@ body {
 /* ===================================
    📱 RESPONSIVE HP KECIL (≤ 480px)
    =================================== */
-@media (max-width: 480px) {
+@media (max-width: 680px) {
 
   .menu h2 {
     font-size: 1.5rem;
@@ -817,7 +817,7 @@ body {
   .menu .row .menu-card .menu-card-img,
   .menu .row1 .menu-card .menu-card-img,
   .menu .row2 .menu-card .menu-card-img {
-    height: 120px;
+    height: 200px;
     object-fit: cover;
   }
 
