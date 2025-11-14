@@ -784,6 +784,108 @@ body {
   font-weight: normal;
 }
 
+/* ===================================
+   📱 RESPONSIVE HP KECIL (≤ 480px)
+   =================================== */
+@media (max-width: 480px) {
+
+  .menu h2 {
+    font-size: 1.5rem;
+  }
+
+  .menu p {
+    font-size: 0.75rem;
+    max-width: 95%;
+  }
+
+  .row, .row1, .row2 {
+    gap: 12px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  /* Kartu jauh lebih kecil */
+  .menu .row .menu-card,
+  .menu .row1 .menu-card,
+  .menu .row2 .menu-card {
+    width: 170px;
+    height: 260px;
+    border-radius: 8px;
+  }
+
+  /* Ukuran gambar lebih kecil */
+  .menu .row .menu-card .menu-card-img,
+  .menu .row1 .menu-card .menu-card-img,
+  .menu .row2 .menu-card .menu-card-img {
+    height: 120px;
+    object-fit: cover;
+  }
+
+  .menu-card .menu-card-title {
+    font-size: 11px;
+    margin-top: 0.4rem;
+  }
+
+  .menu-card .menu-card-price {
+    font-size: 11px;
+    margin: 0.4rem 0;
+  }
+
+  .menu-card .menu-card-price span {
+    font-size: 10px;
+  }
+
+  /* Badge SALE & SOLD OUT lebih kecil */
+  .menu-card-tagsale,
+  .menu-card-tagsoldout {
+    font-size: 9px !important;
+    padding: 4px 6px !important;
+  }
+
+  /* Submenu background */
+  .menu .submenu {
+    background-size: cover;
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .menu .submenu h3 {
+    font-size: 1.8rem;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .menu .submenuh3 h3 {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* ===================================
+   📱 HP MENENGAH (≤ 600px)
+   =================================== */
+@media (max-width: 600px) {
+
+  .menu h2 {
+    font-size: 1.7rem;
+  }
+
+  .row, .row1, .row2 {
+    gap: 18px;
+  }
+
+  .menu .row .menu-card,
+  .menu .row1 .menu-card,
+  .menu .row2 .menu-card {
+    width: 200px;
+    height: 300px;
+  }
+
+  .menu .submenu h3 {
+    font-size: 2.4rem;
+  }
+}
+
 .modal {
   display: none;
   position: fixed;
