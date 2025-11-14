@@ -1,0 +1,37 @@
+[
+  {
+    "type": "image",
+    "src": "galery/Foto1.jpg",
+    "title": "Produk Unggulan 1"
+  },
+  {
+    "type": "video",
+    "src": "galery/Video1.mp4",
+    "title": "Video Promo IFYStore"
+  },
+  {
+    "type": "image",
+    "src": "galery/Foto2.jpg",
+    "title": "Video Promo IFYStore"
+  },
+  {
+    "type": "video",
+    "src": "galery/Video1.mp4",
+    "title": "Video Promo IFYStore"
+  },
+  {
+    "type": "image",
+    "src": "galery/Foto2.jpg",
+    "title": "Video Promo IFYStore"
+  },
+  {
+    "type": "video",
+    "src": "galery/Video1.mp4",
+    "title": "Video Promo IFYStore"
+  },
+  {
+    "type": "image",
+    "src": "galery/Foto2.jpg",
+    "title": "Video Promo IFYStore"
+  }
+]

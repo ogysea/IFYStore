@@ -1,0 +1,272 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>IFYStore</title>
+
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+      <!-- Animasi AOS Start -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+      <!-- feather icons -->
+
+      <script src="https://unpkg.com/feather-icons"></script>
+
+      <!-- My style -->
+
+      <link rel="stylesheet" href="css/style.css" />
+
+      <!--Terhubung dengan JSON-->
+      <script src="script.js"></script>
+
+    </head>
+    <body>
+      <!-- Navbar Start -->
+      <nav class="navbar">
+        <a href="" class="navbar-logo"><span>IFY</span>Store.</a>
+        <div class="navbar-nav">
+          <a href="#home">Home</a>
+          <a href="#about">Tentang Kami</a>
+          <a href="#menu">Produk</a>
+          <a href="#contact">Kontak</a>
+        </div>
+        <div class="navbar-extra">
+          <a href="#" id="search-button"><i data-feather="search"></i></a>
+          <a href="#" id="shopping-cart">
+            <i data-feather="shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </a>
+          <!-- Dropdown keranjang -->
+          <div id="cart-dropdown" class="cart-dropdown" style="display: none;">
+            <h4>Keranjang</h4>
+            <ul id="cart-items"></ul>
+          </div>
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+        <!-- search form start -->
+        <div class="search-form">
+          <input type="search" id="search-box" placeholder="search here..." />
+          <button id="search-submit"><i data-feather="search"></i></button>
+        </div>
+        <!-- Kontainer Produk -->
+          <div id="search-result" style="display: none;">
+          <button id="close-search">Tutup</button>
+          <div class="rowEnd" id="product-container"></div>
+          <script src="https://unpkg.com/feather-icons"></script>
+          </div>
+
+        <!-- search form end -->
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Section Start -->
+      <section class="hero" id="home">
+        <main class="content">
+          <h1>Nikmati hari-harimu dengan <span>Parfum</span> Berkualitas</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </main>
+      </section>
+      <!-- Hero Section End -->
+
+      <a
+    href="https://wa.me/6282272510831?text=Halo%20saya%20tertarik%20dengan%20produk%20Anda"
+    class="floating-wa"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="24" height="24">
+  </a>
+
+      <!-- Abaout Section Start -->
+      <section id="about" class="about">
+        <h2><span>Tentang</span> Kami</h2>
+        <div class="tentang">
+          <div class="about-img">
+            <img src="img/tentang-kami.jpg" alt="Tentang Kami" />
+          </div>
+          <div class="content">
+            <h3>Kenapa memilih Parfum Kami</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              optio sed odio? Molestias excepturi enim dolores explicabo
+              voluptatum qui, voluptatibus quia odio corporis. Accusantium
+              possimus nisi ratione corrupti nam doloremque?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+              odio eveniet, consequatur perspiciatis excepturi ea alias dolorem
+              laudantium itaque placeat earum distinctio odit. Fugit sed modi
+              error dicta, est eaque id voluptas. Fugiat corrupti omnis voluptate
+              consectetur dicta dignissimos delectus placeat! Assumenda nulla rem
+              omnis architecto quidem, quas obcaecati itaque!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="slide-section">
+        <h2><span>IFYStore</span> Galery</h2>
+<div class="gallery-row" id="galleryRow"></div>
+
+<!-- Modal fullscreen -->
+<div id="mediaModal" class="modal">
+  <span class="close" id="closeModalgalery">&times;</span>
+  <div class="modal-content" id="modalContent"></div>
+</div>
+      </section>
+
+      <!-- Abaout Section End -->
+
+      <!-- Menu Section Start -->
+      <section id="menu" class="menu">
+        <h2><span>Produk</span> Kami</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, minima
+          similique tenetur velit ipsa voluptates!
+        </p>
+        <div class="submenu" data-aos="zoom-out-down" data-aos-duration="700">
+          <h3>Women</h3>
+        </div>
+        <div class="submenuh3">
+          <h3>Women</h3>
+        </div>
+        <!-- Kontainer produk -->
+        <div class="row" data-aos="slide-left" data-aos-duration="900">
+        <!-- Produk akan dimuat secara dinamis oleh JavaScript -->
+        </div>
+          <div id="submenu1" class="submenu" data-aos="zoom-out-down" data-aos-duration="1500">
+          <h3>Man</h3>
+        </div>
+        <div class="submenuh3">
+          <h3>Man</h3>
+        </div>
+        <!-- Kontainer produk -->
+        <div class="row1" data-aos="slide-left" data-aos-duration="1700">
+        <!-- Produk akan dimuat secara dinamis oleh JavaScript -->
+        </div>
+        <div id="submenu2" class="submenu" data-aos="zoom-out-down" data-aos-duration="900">
+          <h3>Unisex</h3>
+        </div>
+        <div class="submenuh3">
+          <h3>Unisex</h3>
+        </div>
+        <!-- Kontainer produk -->
+        <div class="row2" data-aos="slide-left" data-aos-duration="1900">
+        <!-- Produk akan dimuat secara dinamis oleh JavaScript -->
+        </div>
+      </section>
+
+  <!-- Modal Produk -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="" />
+      <h3 id="modalTitle"></h3>
+      <p id="modalPrice"></p>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+      </section>
+      <!-- Menu Section End -->
+
+      <!-- Contact Section Start -->
+      <section id="contact" class="contact">
+        <h2><span>Kontak</span> Kami</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, minima
+          similique tenetur velit ipsa voluptates!
+        </p>
+
+        <div class="row">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15927.764939170776!2d98.44649830136765!3d3.6009353919704776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3030d64227590dd5%3A0x380a94cef736ba3f!2sBandar%20Senembah%2C%20Kec.%20Binjai%20Bar.%2C%20Kota%20Binjai%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1746524265659!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map"
+          ></iframe>
+          <form id="wa-form">
+          <div class="input-group">
+            <input type="text" id="nama" placeholder="Nama" required oninput="this.value = this.value.replace(/[^a-z]/g, '')"/>
+          </div>
+            <div class="input-group">
+              <label>
+                <input type="text" id="email" placeholder="Email" required />
+                <span class="domain">@gmail.com</span>
+              </label>
+
+            </div>
+            <div class="input-group">
+              <input type="text" id="nohp" placeholder="No HP" required oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
+            </div>
+            <button type="submit" class="btn">Kirim Pesan</button>
+          </form>
+          <script>
+    document.getElementById("wa-form").addEventListener("submit", function (e) {
+      e.preventDefault(); // Mencegah reload halaman
+
+      // Ambil nilai input
+      const nama = document.getElementById("nama").value.trim();
+      const email = document.getElementById("email").value + "@gmail.com";
+      const nohp = document.getElementById("nohp").value.trim();
+
+      // Nomor WhatsApp tujuan (format internasional tanpa tanda +)
+      const nomorTujuan = "6282272510831";
+
+      // Buat pesan
+      const pesan = `Halo, saya ${nama} ingin menghubungi Anda.\nEmail: ${email}\nNo HP: ${nohp}\nSaya tertarik dengan produk anda`;
+
+      // Encode pesan untuk URL
+      const encodedPesan = encodeURIComponent(pesan);
+
+      // Buat URL WhatsApp
+      const waURL = `https://wa.me/${nomorTujuan}?text=${encodedPesan}`;
+
+      // Buka WhatsApp
+      window.open(waURL, "_blank");
+    });
+  </script>
+        </div>
+      </section>
+      <!-- Contact Section End -->
+
+      <!-- Footer Start -->
+      <footer>
+        <div class="sosials">
+          <a href=""><i data-feather="instagram"></i></a>
+          <a href=""><i data-feather="twitter"></i></a>
+          <a href=""><i data-feather="facebook"></i></a>
+        </div>
+
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#about">about</a>
+          <a href="#menu">Menu</a>
+          <a href="#contact">Kontak</a>
+        </div>
+        <div class="credit">
+          <p>Created by <a href="">ogiprayuda</a>. | &copy; 2023</p>
+        </div>
+      </footer>
+      <!-- Footer End -->
+      <!-- feather icons end -->
+      <script>
+        feather.replace();
+      </script>
+      <!-- My Javascript -->
+      <script src="js/script.js"></script>
+      <!-- Animasi AOS End -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          once: true, // Animasi hanya sekali
+        });
+      </script>
+    </body>
+  </html>
