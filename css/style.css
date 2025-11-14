@@ -444,7 +444,6 @@ body {
     flex: none; /* hilangkan fleksibilitas */
     width: 100%; /* atau 95% untuk sedikit margin */
   }
-}
 
   .about .tentang {
     flex-direction: column; 
