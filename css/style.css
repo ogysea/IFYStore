@@ -460,12 +460,6 @@ body {
     margin-bottom: 0.1rem; /* sangat rapat */
   }
 
-  .about .tentang .content {
-    width: 95%;
-    padding: 0; /* hilangkan padding ekstra */
-    margin-top: 0; 
-  }
-
   .about .tentang .content h3 {
     font-size: 18px;
     margin-bottom: 0.4rem;  /* jarak judul ke paragraf lebih kecil */
