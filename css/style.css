@@ -448,6 +448,9 @@ body {
     border-radius: 12px;
     adding-bottom: 1rem;
   }
+  .about .tentang .about-img {
+    padding-bottom: 0rem;
+  }
 
   .about .content {
     width: 90%;
