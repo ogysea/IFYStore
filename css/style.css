@@ -515,6 +515,31 @@ body {
   font-weight: bold;
 }
 
+/* ===== RESPONSIVE GALLERY FOR MOBILE ===== */
+@media (max-width: 768px) {
+  .gallery-row {
+    height: 250px;              /* lebih kecil di HP */
+    gap: 15px;                  /* jarak antar item diperkecil */
+    padding: 5px;
+  }
+
+  .gallery-item {
+    width: 160px;               /* ukuran kotak gambar lebih kecil */
+    height: 200px;
+    padding-bottom: 1rem;       /* bawah diperkecil */
+  }
+
+  .gallery-item img,
+  .gallery-item video {
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .caption {
+    font-size: 12px;            /* teks caption lebih kecil */
+  }
+}
+
 /* Modal */
 .modal {
   display: none;
