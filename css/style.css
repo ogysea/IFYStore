@@ -19,6 +19,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
 /* Media Query Laptop */
 @media (max-width: 1366px) {
   html {
