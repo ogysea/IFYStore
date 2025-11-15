@@ -391,6 +391,10 @@ body {
 .hero .content h1 {
   font-size: 2rem;
 }
+
+  .hero .content p {
+  font-size: 1.3rem;
+}
 }
 
 /* About Section */
