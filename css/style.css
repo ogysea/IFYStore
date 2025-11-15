@@ -847,10 +847,10 @@ body {
     justify-content: center;
   }
 
-  .menu .submenu h3 {
+  .menu .submenu h3, .menu .submenu1 h3, .menu .submenu2 h3 {
     font-size: 1.8rem;
-    margin-right: 0;
-    text-align: center;
+    top: 0;
+    right: 0;
   }
 
   .menu .submenuh3 h3 {
