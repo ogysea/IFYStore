@@ -785,7 +785,7 @@ body {
 /* ===================================
    📱 RESPONSIVE HP KECIL (≤ 480px)
    =================================== */
-@media (max-width: 680px) {
+@media (max-width: 780px) {
 
   .menu h2 {
     font-size: 1.5rem;
@@ -848,13 +848,11 @@ body {
   .menu .submenu {
     background-size: cover;
     padding: 1rem;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .menu .submenu h3, .menu .submenu1 h3, .menu .submenu2 h3 {
     font-size: 1.8rem;
-    top: 0;
-    right: 0;
   }
 
   .menu .submenuh3 h3 {
