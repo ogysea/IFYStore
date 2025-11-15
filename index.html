@@ -189,7 +189,7 @@
           ></iframe>
           <form id="wa-form">
           <div class="input-group">
-            <input type="text" id="nama" placeholder="Nama" required oninput="this.value = this.value.replace(/[^a-z]/g, '')"/>
+            <input type="text" id="nama" placeholder="Nama" required oninput="this.value = this.value.replace(/[^a-zA-Z\s']/g, '')"/>
           </div>
             <div class="input-group">
               <label>
@@ -208,7 +208,7 @@
       e.preventDefault(); // Mencegah reload halaman
 
       // Ambil nilai input
-      const nama = document.getElementById("nama").value.trim();
+      const nama = document.getElementById("nama").value;
       const email = document.getElementById("email").value + "@gmail.com";
       const nohp = document.getElementById("nohp").value.trim();
 
